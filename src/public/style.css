@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+/* font-family: "Frank Ruhl Libre", serif;
+   font_family:Roboto/Font-weight; */
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* General style elements */
+
+h1 {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 20px;
+}
+
+a {
+    font-family: "Roboto", sans-serif;
+    font-size: medium;
+    color: black;
+    text-decoration: none;
+}
+
+/* BODY */
+
+body {
+    max-width: 100%;
+    min-height: 100%;
+    background-color: #e7e7e4;
+}
+
+/* Navbar */
+
+.nav-container {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 100%;
+    min-height: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    background-color: #0097a5;
+    ;
+
+    /* overflow:hidden; */
+}
+
+/* First section Nav_Logo */
+
+.logo-container {
+    width: 180px;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 5px;
+    padding-top: 15px;
+    color: #f7f6f6;
+    /* background-color:black; */
+}
+
+.Brand {
+    width: 120px;
+    height: auto;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+/* Second section Nav_Navbar */
+
+.nav_ul {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: end;
+    padding-top: 30px;
+    gap: 10px;
+
+}
+
+.nav_li {
+    width: 120px;
+    height: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 2px;
+}
+
+.nav_a:hover {
+    padding: 10px;
+    background-color: dimgrey;
+    color: #f7f6f6;
+
+}
+
+.nav_a {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: end;
+    text-align: center;
+    padding: 6px;
+
+}
+
+/* Welcome title section */
+.Title-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    background-color: #e7e7e4;
+}
+
+/* Item contenedor*/
+.cardProductShow {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding-top: 50px;
+    padding: 50px 10px;
+    width: 100%;
+    height: 100%;
+    background-color: #e7e7e4;
+}
+
+/* Item card*/
+.cardProduct {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border: 1px solid black;
+    font-size: small;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    gap: 20px;
+    box-shadow: 10px 10px 10px #0097a5;
+    transition: 1s;
+
+    &.cardProduct:hover {
+        transform: translate(0px, 10px);
+    }
+
+}
+
+.cardProductsRedirect {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border: 1px solid black;
+    font-size: small;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    gap: 20px;
+    box-shadow: 10px 10px 10px #0097a5;
+    transition: 1s;
+
+    &.cardProduct:hover {
+        transform: translate(0px, 10px);
+    }
+
+}
+
+.cardInfoRedirect {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 65%;
+    height: auto;
+    margin-bottom: 100px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: small;
+    font-family: Helvetica, sans-serif;
+    font-weight: 800;
+    gap: 20px;
+    box-shadow: 10px 10px 10px #0097a5;
+    transition: 1s;
+
+    &.cardInfoRedirect:hover {
+        transform: translate(0px, 10px);
+    }
+}
+
+/*description*/
+.font-paragraph {
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+/*Buton redirect sectionPage*/
+.btnProductsLink {
+    padding: 5px 45px;
+    background-color: #bee5eb;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: x-small;
+    font-weight: 100;
+
+    &.btnDetailProductLink:hover {
+        background-color: #e7e7e4;
+    }
+}
+
+/* SECTION FOOTER */
+/* // General container */
+footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#e7e7e4, #aeb3b8);
+    font-family: "Quicksand", sans-serif;
+    border-top: 1px solid #0097a5;
+
+}
+
+.FooterContainer {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.Footer-Brand-inc {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.FooterBrand {
+    width: 120px;
+    height: auto;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-right: 25px;
+}
+
+.Inc {
+    width: 170px;
+    height: auto;
+    margin-left: 30px;
+    padding-top: 10px;
+    padding-right: 25px;
+}
+
+.social-ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+    list-style: none;
+}
+
+.socialLi {
+    width: 150px;
+    margin-left: 200px;
+}
+
+.socialNetwork {
+    width: 24px;
+    height: 24px;
+    transition: 1s;
+
+    &.socialNetwork:hover {
+        transform: scale(1.3);
+    }
+}
+
+.ClienServ-title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-self: center;
+    justify-content: center;
+    background-color: #e7e7e4;
+}
+
+form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #0097a5;
+}
+
+.lable {
+    padding: 20px;
+}
+
+.btnSubmit {
+    padding: 5px 45px;
+    margin-top: 20px;
+    background-color: #bee5eb;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-size: x-small;
+    font-weight: 100;
+
+    &.btnDetailProductLink:hover {
+        background-color: #e7e7e4;
+    }
+}
+
+.ListProducts {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 30px 0px;
+
+}
+
+.ListNewProducts {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+
+}
+
+.ItemList {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    border: 1px solid #0097a5;
+    background-color: #f7f6f6;
+    margin-bottom: 10px;
+
+}
+

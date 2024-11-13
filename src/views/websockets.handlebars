@@ -1,0 +1,15 @@
+<h2 class="ClienServ-title">Admin Server</h2>
+
+<form id="form">
+    <lable class="font-paragraph lable">Product: </lable><input type="text" name="name" id="name">
+    <lable class="font-paragraph lable ">Price: </lable><input type="number" name="price" id="price">
+    <input class="btnSubmit" type="submit" value="Send">
+</form>
+<section class="ListProducts">
+    <h2 class="ClienServ-title">New Products</h2>
+    <div class="ListNewProducts" id="products">
+
+    </div>
+</section>
+<script src="/socket.io/socket.io.js"></script>
+<script src="index.js"></script>
